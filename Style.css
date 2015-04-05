@@ -1,32 +1,5 @@
-h1{
-	color:white;
-	position:absolute;
-	top:10px;
-	left: 660px;
-	z-index: +1;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font size: 40;
-}
 
-#stars{
-	height:500px;
-	width:100%;
-}
-p{
-	color:white;
-}
-#windows{
-	height:500px;
-	width: 85%;
-	}
-
-/*	width: 100%;
-	margin-top: -300px;
-	
-}
-*/
 html{
 	background: gray;
 	text-align: center;
 }
-/*comment*/
