@@ -178,7 +178,9 @@ section h2 {
     margin: 0;
     font-size: 3em;
 }
-
+#downloadbutt{
+    color: rgb(78, 78, 120);
+}
 section.success {
     color: #fff;
     background: rgba(84, 84, 86, 0.57);
@@ -335,7 +337,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #7f8c8d;
+    background-color: rgba(84, 84, 86, 0.57);
 }
 
 footer .footer-col {
