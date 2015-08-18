@@ -181,7 +181,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #7f8c8d;
+    background: rgba(84, 84, 86, 0.57);
 }
 
 @media(max-width:767px) {
