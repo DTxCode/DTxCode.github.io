@@ -5813,10 +5813,19 @@ button.close {
 .carousel {
   position: relative;
 }
+/*.activepic{
+  position: center;
+}*/
+
 .carousel-inner {
+  display: block;
   position: relative;
+  position: center;
+  margin-left: 27%;
+ 
   overflow: hidden;
-  width: 100%;
+  z-index: 0;
+  /*width: 100%;*/
 }
 .carousel-inner > .item {
   display: none;
@@ -5903,22 +5912,22 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);*/
 }
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);*/
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -5961,33 +5970,48 @@ button.close {
   content: '\203a';
 }
 .carousel-indicators {
-  position: absolute;
-  bottom: 10px;
+  position: relative;
   left: 50%;
-  z-index: 15;
+  z-index: 2;
   width: 60%;
   margin-left: -30%;
   padding-left: 0;
   list-style: none;
   text-align: center;
+  color: black;
 }
 .carousel-indicators li {
+  position: relative;
   display: inline-block;
   width: 10px;
   height: 10px;
   margin: 1px;
+  z-index: 3;
   text-indent: -999px;
-  border: 1px solid #ffffff;
+  /*border: 1px solid black;*/
   border-radius: 10px;
   cursor: pointer;
-  background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: gray;
+  background-color: gray;
+  color: black;
 }
 .carousel-indicators .active {
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: #ffffff;
+  background-color: black;
+}
+.indic{
+  margin-bottom: 1%;
+}
+#toshift{
+  margin-left: -1%;
+}
+#toshiftcopy{
+  margin-left: -1%;
+}
+#sameshift{
+  margin-left: -1%;
 }
 .carousel-caption {
   position: absolute;
@@ -6004,7 +6028,7 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 300px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -6013,6 +6037,7 @@ button.close {
     height: 30px;
     margin-top: -15px;
     font-size: 30px;
+    color: black;
   }
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
@@ -6026,9 +6051,11 @@ button.close {
     left: 20%;
     right: 20%;
     padding-bottom: 30px;
+    color: black;
   }
   .carousel-indicators {
     bottom: 20px;
+    color: black;
   }
 }
 .clearfix:before,
