@@ -1,3 +1,39 @@
 body {
-  background-color: lightblue;
+  background-color: #5514b7;
+}
+
+#greeting {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 26px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#reset {
+  /* Text */
+  background-color: #5514b7;
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  /* Button */
+  border: 1px solid;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 0 auto;
+  display: block;
+  transition-duration: 0.2s;
+}
+
+#reset:hover {
+  background-color: white;
+  color: #5514b7;
+}
+
+#wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
