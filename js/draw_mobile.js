@@ -11,11 +11,11 @@ ctx.lineWidth = "5";
 ctx.strokeStyle = "white";
 ctx.fillStyle = "white";
 
-document.onmousedown = handleMouseDown;
+c.ontouchstart = handleTouchStart;
 
-function handleMouseDown(event) {
-  var x = event.pageX
-  var y = event.pageY
+function handleTouchStart(event) {
+  var x = event.changedTouches[0].pageX;
+  var y = event.changedTouches[0].pageY;
 
   existingX = x
   existingY = y
@@ -24,12 +24,12 @@ function handleMouseDown(event) {
   ctx.fillRect(existingX - 3, existingY - 3, 5, 5);
 }
 
-document.onmousemove = handleMouseMove;
+c.ontouchmove = handleTouchMove;
 
-function handleMouseMove(event) {
+function handleTouchMove(event) {
   if (isDown) {
-    var x = event.pageX
-    var y = event.pageY
+    var x = event.changedTouches[0].pageX;
+    var y = event.changedTouches[0].pageY;
 
     ctx.moveTo(existingX, existingY);
     ctx.lineTo(x, y);
@@ -40,9 +40,10 @@ function handleMouseMove(event) {
   }
 }
 
-document.onmouseup = handleMouseUp;
+c.ontouchend = handleTouchEnd;
+c.ontouchcancel = handleTouchEnd;
 
-function handleMouseUp(event) {
+function handleTouchEnd(event) {
   isDown = false
 }
 
