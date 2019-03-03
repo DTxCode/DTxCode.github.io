@@ -14,7 +14,6 @@ ctx.fillStyle = "white";
 c.ontouchstart = handleTouchStart;
 
 function handleTouchStart(event) {
-  event.preventDefault();
   var x = event.changedTouches[0].pageX;
   var y = event.changedTouches[0].pageY;
 
@@ -29,8 +28,6 @@ c.ontouchmove = handleTouchMove;
 
 function handleTouchMove(event) {
   if (isDown) {
-    event.preventDefault();
-
     var x = event.changedTouches[0].pageX;
     var y = event.changedTouches[0].pageY;
 
@@ -48,7 +45,6 @@ c.ontouchcancel = handleTouchEnd;
 
 function handleTouchEnd(event) {
   isDown = false
-  event.preventDefault();
 }
 
 function reset() {
