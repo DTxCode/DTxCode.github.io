@@ -2,20 +2,38 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" type="image/png" href="img/avatar.png">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-  <div id="wrapper">
-    <p id="greeting">Click and hold to draw!</p>
-    <button id="reset" onclick="reset()">Reset</button>
+  <div id="header">
+    <p id="name">
+      <img id="avatar" src="img/avatar.png">
+      David Tandetnik
+    </p>
   </div>
 
-  <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
-  <script src="js/draw.js"></script>
-  <script src="js/draw_mobile.js"></script>
+  <div id='wrap'>
+    <div class="blocks">
+      <a href="https://dev.to/dtxcode">
+        <img id="dev-badge" src="img/dev.png" alt="David Tandetnik's DEV Profile">
+      </a>
+    </div>
+
+    <div class="blocks">
+      <a href="https://github.com/DTxCode">
+        <img id="github-badge" src="img/github.png" alt="David Tandetnik's Github">
+      </a>
+    </div>
+
+    <div class="blocks">
+      <a href="https://www.linkedin.com/in/david-tandetnik-4bb2a6138/">
+        <img id="linkedin-badge" src="img/linkedin.png" alt="David Tandetnik's LinkedIn">
+      </a>
+    </div>
+  </div>
 </body>
 
 </html>
