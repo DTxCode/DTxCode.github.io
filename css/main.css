@@ -1,39 +1,60 @@
-body {
-  background-color: #5514b7;
+html {
+  height: 100%;
 }
 
-#greeting {
+body {
+  height: 100%;
+  background-color: #202124;
+}
+
+#header {
+  height: auto;
+}
+
+#name {
   color: white;
   text-align: center;
-  width: 100%;
-  font-size: 26px;
+  font-size: 5vw;
   font-family: 'Montserrat', sans-serif;
 }
 
-#reset {
-  /* Text */
-  background-color: #5514b7;
-  color: white;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  /* Button */
-  border: 1px solid;
-  cursor: pointer;
-  padding: 5px 20px;
-  margin: 0 auto;
-  display: block;
-  transition-duration: 0.2s;
+#wrap{
+    text-align: center;
+    height: auto;
+    padding-top: 5vh;
 }
 
-#reset:hover {
-  background-color: white;
-  color: #5514b7;
+.blocks {
+  display: inline-block; 
+  padding: 1vh;
+  box-sizing: border-box;
+  width: 30%;
 }
 
-#wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+.blocks:hover {
+  opacity: 70%;
+}
+
+img {
+  max-width: 100%;
+  width: 512px;
+  height: auto;
+}
+
+#dev-badge {
+  border-radius: 50%;  
+}
+
+@media only screen and (max-width: 1000px) {
+  #name {
+    font-size: 8vw;
+  }
+
+  #wrap{
+    padding-top: 0vh;
+  }
+
+  .blocks {
+    width: 50%;
+  }
 }
